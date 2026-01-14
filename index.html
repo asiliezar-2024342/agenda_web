@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <title>Agenda Web</title>
+    <script defer src="./src/js/auth.js"></script>
 </head>
 
-<body>
 
+<body class="flex justify-center items-center h-screen w-screen">
+    <main
+        class="flex overflow-hidden shadow-none md:shadow-2xl w-full h-screen rounded-none md:w-[90%] md:max-w-5xl md:h-[80vh] md:rounded-2xl bg-white">
+
+        <section class="w-full md:w-1/2 h-full flex flex-col justify-center items-stretch gap-4 p-8 md:p-14">
+
+            <div class="mb-6">
+                <span class="text-title text-2xl">Bienvenido</span>
+                <h2 class="text-title text-4xl md:text-5xl font-bold">Iniciar Sesión</h2>
+            </div>
+
+            <form class="flex flex-col gap-6" id="loginForm">
+                <div class="relative flex items-center justify-center">
+                    <svg class="absolute left-4 text-button" fill="currentColor" width="20" height="20">
+                        <use xlink:href="./assets/img/sprite.svg#email" />
+                    </svg>
+                    <input required class="input-text" fill="currentColor" type="email" id="txtEmail"
+                        placeholder="Correo Electronico">
+                </div>
+
+                <div class="relative flex items-center justify-center">
+                    <svg class="absolute left-4 text-button" fill="currentColor" width="20" height="20">
+                        <use xlink:href="./assets/img/sprite.svg#password" />
+                    </svg>
+                    <input required class="input-text" fill="currentColor" type="password" id="txtPassword"
+                        placeholder="Contraseña">
+                </div>
+
+                <button type="submit" class="button-primary">Continuar</button>
+            </form>
+
+        </section>
+
+        <section class="hidden md:flex w-1/2 bg-primary rounded-l-[200px] flex-col justify-center items-center gap-4">
+            <h1 class="text-title text-6xl font-extrabold tracking-tighter">Agenda Web</h1>
+            <img class="w-64 hover:animate-tada drop-shadow-xl drop-shadow-button" src="./assets/img/book.webp"
+                alt=" Imagen Agenda">
+        </section>
+
+    </main>
 </body>
 
 </html>

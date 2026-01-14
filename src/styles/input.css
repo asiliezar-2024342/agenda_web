@@ -1,2 +1,17 @@
 @import "tailwindcss";
 @import 'tailwind-animations';
+
+@theme{
+    --color-primary: #D0CEFF;
+    --color-title: #5B4294;
+    --color-subtitle: #8F78C5;
+    --color-button: #8f78c5;
+}
+
+.input-text{
+    @apply w-full py-3 pr-3 pl-10 rounded-full border border-gray-300 focus:border-button focus:outline-none;
+}
+
+.button-primary{
+    @apply bg-button hover:bg-primary text-white p-3 rounded-full cursor-pointer
+}
