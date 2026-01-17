@@ -3,6 +3,7 @@
 
 @theme{
     --color-primary: #D0CEFF;
+    --color-primary-light: #DEDCFA;
     --color-title: #5B4294;
     --color-subtitle: #8F78C5;
     --color-button: #8f78c5;
@@ -14,4 +15,16 @@
 
 .button-primary{
     @apply bg-button hover:bg-primary text-white p-3 rounded-full cursor-pointer
+}
+
+.action-button{
+    @apply rounded-full p-3 hover:animate-tilt cursor-pointer text-white
+}
+
+.subtitle{
+    @apply text-4xl font-bold text-title text-center
+}
+
+.profile{
+    @apply size-20 flex items-center justify-center rounded-full bg-primary
 }
