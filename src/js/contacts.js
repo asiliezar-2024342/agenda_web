@@ -9,8 +9,9 @@ export function renderContact(contacts = contactsDB) {
   // Recorrer la DB y crear el nodo de cada contacto
   contacts.forEach((contact) => {
     const parts = contact.name.split(" ");
-    const initials =
-      parts[0].charAt(0).toUpperCase() + parts[1].charAt(0).toUpperCase();
+    const firstInitial = parts[0].charAt(0).toUpperCase();
+    const secondInitial = parts[1] ? parts[1].charAt(0).toUpperCase() : "";
+    const initials = firstInitial + secondInitial;
 
     main.appendChild(new ContactCard(contact, initials));
   });
