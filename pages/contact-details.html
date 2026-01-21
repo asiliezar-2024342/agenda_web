@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Web</title>
+    <link rel="stylesheet" href="../src/styles/output.css" />
+    <script type="module" src="../src/js/contact-details.js"></script>
+  </head>
+
+  <body class="flex flex-col justify-center items-center h-dvh">
+    <main>
+      <section class="section-action">
+        <header class="header-action">
+          <h2 class="subtitle">Información</h2>
+          <a href="/pages/contacts.html" class="button-primary">Volver</a>
+        </header>
+
+        <section class="flex flex-col gap-4 w-full text-button font-bold">
+          <header
+            id="profile-header"
+            class="flex items-center gap-2 justify-center"
+          ></header>
+
+          <fieldset
+            class="border border-gray-400 rounded-lg p-1 flex items-center gap-2 group"
+          >
+            <legend class="px-2 text-sm text-gray-500 font-medium">
+              Nombre
+            </legend>
+            <svg class="text-button size-6">
+              <use href="../assets/img/sprite.svg#user"></use>
+            </svg>
+            <span class="flex gap-2 font-normal text-gray-800" id="name"></span>
+          </fieldset>
+
+          <fieldset
+            class="border border-gray-400 rounded-lg p-1 flex items-center gap-2 group"
+          >
+            <legend class="px-2 text-sm text-gray-500 font-medium">
+              Correo
+            </legend>
+            <svg class="text-button size-6">
+              <use href="../assets/img/sprite.svg#email"></use>
+            </svg>
+            <span
+              class="flex gap-2 font-normal text-gray-800"
+              id="email"
+            ></span>
+          </fieldset>
+
+          <fieldset
+            class="border border-gray-400 rounded-lg p-1 flex items-center gap-2 group"
+          >
+            <legend class="px-2 text-sm text-gray-500 font-medium">
+              Número
+            </legend>
+            <svg class="text-button size-6">
+              <use href="../assets/img/sprite.svg#phone"></use>
+            </svg>
+            <span
+              class="flex gap-2 font-normal text-gray-800"
+              id="phone"
+            ></span>
+          </fieldset>
+
+          <fieldset
+            class="border border-gray-400 rounded-lg p-1 flex items-center gap-2 group"
+          >
+            <legend class="px-2 text-sm text-gray-500 font-medium">
+              Dirección
+            </legend>
+            <svg class="text-button size-6">
+              <use href="../assets/img/sprite.svg#location"></use>
+            </svg>
+            <span
+              class="flex gap-2 font-normal text-gray-800"
+              id="address"
+            ></span>
+          </fieldset>
+
+          <fieldset
+            class="border border-gray-400 rounded-lg p-1 flex items-center gap-2 group"
+          >
+            <legend class="px-2 text-sm text-gray-500 font-medium">
+              Cumpleaños
+            </legend>
+            <svg class="text-button size-6">
+              <use href="../assets/img/sprite.svg#birthday"></use>
+            </svg>
+            <span
+              class="flex gap-2 font-normal text-gray-800"
+              id="birthday"
+            ></span>
+          </fieldset>
+
+          <fieldset
+            class="border border-gray-400 rounded-lg p-1 flex items-center gap-2 group"
+          >
+            <legend class="px-2 text-sm text-gray-500 font-medium">
+              Favorito
+            </legend>
+            <svg class="text-button size-6">
+              <use href="../assets/img/sprite.svg#star"></use>
+            </svg>
+            <span
+              class="flex gap-2 font-normal text-gray-800"
+              id="favorite"
+            ></span>
+          </fieldset>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

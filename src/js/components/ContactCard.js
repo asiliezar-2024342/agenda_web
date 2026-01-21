@@ -43,7 +43,7 @@ export class ContactCard extends HTMLElement {
                         <use xlink:href="../assets/img/sprite.svg#phone" />
                     </svg>
                 </button>
-                <button class="button-detail-contact action-button bg-button">
+                <button id="button-detail-contact" class="action-button bg-button">
                     <svg width="20" height="20">
                         <use xlink:href="../assets/img/sprite.svg#detail" />
                     </svg>
@@ -54,6 +54,12 @@ export class ContactCard extends HTMLElement {
     const buttonCall = this.querySelector("#button-call");
     buttonCall.addEventListener("click", () => {
       this.callContact(this.contact, this.initials);
+    });
+
+    const buttonDetailContact = this.querySelector("#button-detail-contact");
+    buttonDetailContact.addEventListener("click", () => {
+      localStorage.setItem("contact", JSON.stringify(this.contact));
+      window.location.href = `/pages/contact-details.html`;
     });
   }
 

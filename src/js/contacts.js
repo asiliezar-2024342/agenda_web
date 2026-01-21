@@ -26,7 +26,3 @@ export function renderContact(contacts = contactsDB) {
 export function addContact() {
   window.location.href = "/pages/new-contact.html";
 }
-
-export function detailContact() {
-  window.location.href = "/pages/detail-contact.html";
-}
