@@ -14,10 +14,22 @@ export class ContactCard extends HTMLElement {
       ? this.initials
       : this.getAttribute("initials");
 
+    const starHTML = this.contact.isFavorite
+      ? `
+        <div class="absolute top-0 right-0">
+             <svg class="w-5 h-5 text-yellow-500">
+                <use href="../assets/img/sprite.svg#star"></use>
+            </svg>
+        </div>`
+      : "";
+
     this.innerHTML = `
         <section class = "timeline-view animate-zoom-in animate-range-entry sm:animate-blurred-fade-in sm:animate-range-[entry_10%_contain_30%] shadow-xl p-4 sm:p-8 rounded-xl flex sm:flex-col gap-2 justify-between sm:justify-center items-center flex-row">
             <!-- PERFIL DEL CONTACTO -->
-            <contact-profile initials="${this.initials}"></contact-profile>
+            <div class="flex items-center justify-center profile-card">
+                <contact-profile initials="${this.initials}"></contact-profile>
+                ${starHTML}
+            </div>
 
             <!-- INFORMACION DEL CONTACTO -->
            <section class="flex flex-col gap-2 items-center justify-center">
