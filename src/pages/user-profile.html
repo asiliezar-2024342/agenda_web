@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Web</title>
+    <link rel="stylesheet" href="../assets/styles/output.css" />
+    <script type="module" src="../js/components/SideBar.js"></script>
+    <script type="module" src="../js/user-profile.js"></script>
+  </head>
+  <body>
+    <side-bar></side-bar>
+
+    <main class="flex flex-col items-center justify-center w-dvw h-dvh">
+      <section
+        class="flex flex-col items-start justify-center p-4 rounded-lg sm:shadow-lg h-1/2 w-full sm:w-1/2 gap-6"
+      >
+        <div class="flex items-center gap-2">
+          <svg class="size-6 text-button">
+            <use href="../assets/img/sprite.svg#user"></use>
+          </svg>
+          <p class="text-lg font-semibold">
+            Nombres: <span class="font-normal" id="name"></span>
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="size-6 text-button">
+            <use href="../assets/img/sprite.svg#user"></use>
+          </svg>
+          <p class="text-lg font-semibold">
+            Apellidos: <span class="font-normal" id="lastname"></span>
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="size-6 text-button">
+            <use href="../assets/img/sprite.svg#user"></use>
+          </svg>
+          <p class="text-lg font-semibold">
+            Usuario: <span class="font-normal" id="username"></span>
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="size-6 text-button">
+            <use href="../assets/img/sprite.svg#email"></use>
+          </svg>
+          <p class="text-lg font-semibold">
+            Correo Electronico: <span class="font-normal" id="email"></span>
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <svg class="size-6 text-button">
+            <use href="../assets/img/sprite.svg#calendar"></use>
+          </svg>
+          <p class="text-lg font-semibold">
+            Fecha de Registro:
+            <span class="font-normal" id="registrationDate"></span>
+          </p>
+        </div>
+        <div class="flex items-center md:justify-center justify-start w-full">
+          <button class="button-primary" id="logout">Cerrar Sesion</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

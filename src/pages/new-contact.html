@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Web</title>
+    <link rel="stylesheet" href="../assets/styles/output.css" />
+    <script type="module" src="../js/new-contact.js"></script>
+  </head>
+
+  <body class="flex flex-col justify-center items-center h-dvh">
+    <main>
+      <section class="section-action">
+        <header class="header-action">
+          <h2 class="subtitle">Registrar a un nuevo contacto</h2>
+          <a href="contacts.html" class="button-primary">Cancelar</a>
+        </header>
+
+        <form id="form" class="flex flex-col gap-4 w-full">
+          <div class="relative flex items-center">
+            <svg class="absolute left-4 text-button" width="20" height="20">
+              <use href="../assets/img/sprite.svg#user"></use>
+            </svg>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre"
+              required
+              class="input-text"
+            />
+          </div>
+          <div class="relative flex items-center">
+            <svg class="absolute left-4 text-button" width="20" height="20">
+              <use href="../assets/img/sprite.svg#email"></use>
+            </svg>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Correo"
+              required
+              class="input-text"
+            />
+          </div>
+          <div class="relative flex items-center">
+            <svg class="absolute left-4 text-button" width="20" height="20">
+              <use href="../assets/img/sprite.svg#phone"></use>
+            </svg>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Número"
+              required
+              class="input-text"
+            />
+          </div>
+          <div class="relative flex items-center">
+            <svg class="absolute left-4 text-button" width="20" height="20">
+              <use href="../assets/img/sprite.svg#location"></use>
+            </svg>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Dirección"
+              class="input-text"
+            />
+          </div>
+          <div class="relative flex items-center">
+            <svg class="absolute left-4 text-button" width="20" height="20">
+              <use href="../assets/img/sprite.svg#birthday"></use>
+            </svg>
+            <input
+              type="date"
+              name="birthday"
+              id="birthday"
+              placeholder="Cumpleaños"
+              class="input-text"
+            />
+          </div>
+
+          <label for="favorite">
+            <input
+              type="checkbox"
+              name="favorite"
+              id="favorite"
+              class="w-4 h-4 accent-button"
+            />
+            Favorito</label
+          >
+
+          <button class="button-primary" type="submit">Agregar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

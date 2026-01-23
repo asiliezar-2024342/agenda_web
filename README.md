@@ -1,0 +1,55 @@
+# Agenda Web - Laboratorio 1 de Práctica Supervisada
+
+Este es un proyecto web que permite gestionar una agenda de contactos.
+
+## Tecnologías
+
+- **_HTML5_**: Estructura de la página.
+- **_CSS3_**: Hojas de estilo.
+- **_JavaScript_**: Lógica e interactividad de la páginda.
+- **_Tailwind CSS V4_**: Framework de estilos para el desarrollo web.
+- **_NPM_**: Gestor de dependencias de desarrollo (Tailwind CSS).
+
+## Requisitos
+
+Para ejecutar este proyecto, necesita tener instalado
+
+- [Node.js](https://nodejs.org/) (versión 18 o superior recomendada).
+- [npm](https://www.npmjs.com/) (versión 8 o superior recomendada).
+- [Tailwind CSS](https://tailwindcss.com/) (versión 4 o superior recomendada).
+
+# Guía de instalación
+
+1. **_Clonar el repositorio_**
+
+```bash
+$ git clone https://github.com/asiliezar-2024342/agenda_web.git
+```
+
+2. **_Navega hasta la carpeta raíz del proyecto_**
+
+```bash
+$ cd agenda_web
+```
+
+3. **_Instalar dependencias_**
+
+```bash
+$ npm install
+```
+
+4. **_Construir el proyecto de ser necesario_**
+
+```bash
+$ npm run dev
+```
+
+O
+
+```bash
+$ npm run build
+```
+
+5. **_Ejecutar_**
+
+- Abre el archivo `index.html` con la extensión Live Server.
