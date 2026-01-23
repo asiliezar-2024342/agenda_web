@@ -1,3 +1,5 @@
+import Task from "./models/Task.js";
+
 // DB
 export class Contact {
   constructor(name, email, phone, location, birthday, isFavorite = false) {
@@ -226,6 +228,16 @@ const defaultContacts = [
   ),
 ];
 
+const defaultTasks = [
+  new Task("Hacer la compra", Task.PRIORITY_LOW, new Date("2026-03-11")),
+  new Task("Hacer matemáticas", Task.PRIORITY_MEDIUM, new Date("2026-02-11")),
+  new Task("Lavar los platos", Task.PRIORITY_HIGH, new Date("2026-02-22")),
+];
+
 export const contactsDB = localStorage.getItem("contactsDB")
   ? JSON.parse(localStorage.getItem("contactsDB"))
   : defaultContacts;
+
+export const tasksDB = localStorage.getItem("tasksDB")
+  ? JSON.parse(localStorage.getItem("tasksDB"))
+  : defaultTasks;
