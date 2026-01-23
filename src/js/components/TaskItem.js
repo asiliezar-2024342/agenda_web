@@ -18,7 +18,7 @@ export default class TaskItem extends HTMLElement {
 
     switch (priority) {
       case Task.PRIORITY_LOW:
-        bgColor = "bg-green-500";
+        bgColor = "bg-blue-500";
         text = "Baja";
         break;
       case Task.PRIORITY_MEDIUM:
@@ -29,6 +29,11 @@ export default class TaskItem extends HTMLElement {
         bgColor = "bg-red-500";
         text = "Alta";
         break;
+    }
+
+    if (this.task.complete) {
+      bgColor = "bg-green-500";
+      text = "Completada";
     }
 
     return `<span class="pointer-events-none ${bgColor} text-white px-2 rounded-md" title="Prioridad">${text}</span>`;
@@ -57,9 +62,11 @@ export default class TaskItem extends HTMLElement {
   setupListeners() {
     const editTask = this.querySelector("#edit-task");
     const deleteTask = this.querySelector("#delete-task");
+    const checkbox = this.querySelector("input[type='checkbox']");
 
     editTask.addEventListener("click", this.editTask.bind(this));
     deleteTask.addEventListener("click", this.deleteTask.bind(this));
+    checkbox.addEventListener("change", this.toggleTask.bind(this));
   }
 
   editTask() {
@@ -74,6 +81,16 @@ export default class TaskItem extends HTMLElement {
 
   deleteTask() {
     const event = new CustomEvent("delete-task", {
+      bubbles: true,
+      detail: {
+        title: this.task.title,
+      },
+    });
+    this.dispatchEvent(event);
+  }
+
+  toggleTask() {
+    const event = new CustomEvent("toggle-task", {
       bubbles: true,
       detail: {
         title: this.task.title,

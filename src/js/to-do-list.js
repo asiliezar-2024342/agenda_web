@@ -98,3 +98,16 @@ function editTask() {
   addTaskBtn.classList.remove("hidden");
   editTaskBtn.classList.add("hidden");
 }
+
+// Listener para marcar una tarea como completada
+taskList.addEventListener("toggle-task", (e) => {
+  const title = e.detail.title;
+
+  const index = tasksDB.findIndex((task) => task.title === title);
+
+  if (index === -1) return;
+
+  tasksDB[index].complete = !tasksDB[index].complete;
+  localStorage.setItem("tasksDB", JSON.stringify(tasksDB));
+  renderTask();
+});

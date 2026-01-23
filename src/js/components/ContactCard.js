@@ -16,7 +16,7 @@ export class ContactCard extends HTMLElement {
 
     const starHTML = this.contact.isFavorite
       ? `
-        <div class="absolute top-5 right-2">
+        <div class="absolute top-0 md:top-5 right-2">
              <svg class="w-5 h-5 text-yellow-500">
                 <use href="../assets/img/sprite.svg#star"></use>
             </svg>
@@ -71,7 +71,7 @@ export class ContactCard extends HTMLElement {
     const buttonDetailContact = this.querySelector("#button-detail-contact");
     buttonDetailContact.addEventListener("click", () => {
       localStorage.setItem("contact", JSON.stringify(this.contact));
-      window.location.href = `/pages/contact-details.html`;
+      window.location.href = `/src/pages/contact-details.html`;
     });
   }
 

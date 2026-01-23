@@ -17,31 +17,31 @@ export class SideBar extends HTMLElement {
         <nav class="flex flex-col gap-8 w-full items-center">
             
             <div class="mb-4">
-               <svg class="size-8 text-prim"><use href="/assets/img/sprite.svg#logo"></use></svg>
+               <svg class="size-8 text-prim"><use href="../assets/img/sprite.svg#logo"></use></svg>
             </div>
 
-            <a href="/pages/contacts.html" title="Contactos" class="p-3 rounded-xl hover:bg-primary text-gray-500 hover:text-white transition-colors">
-                <svg class="size-6"><use href="/assets/img/sprite.svg#user"></use></svg>
+            <a href="../pages/contacts.html" title="Contactos" class="p-3 rounded-xl hover:bg-primary text-gray-500 hover:text-white transition-colors">
+                <svg class="size-6"><use href="../assets/img/sprite.svg#user"></use></svg>
             </a>
 
-            <a href="/pages/favorite-contacts.html" title="Favoritos" class="p-3 rounded-xl hover:bg-primary text-gray-500 hover:text-white transition-colors">
-                <svg class="size-6"><use href="/assets/img/sprite.svg#star"></use></svg>
+            <a href="../pages/favorite-contacts.html" title="Favoritos" class="p-3 rounded-xl hover:bg-primary text-gray-500 hover:text-white transition-colors">
+                <svg class="size-6"><use href="../assets/img/sprite.svg#star"></use></svg>
             </a>
 
-            <a href="/pages/to-do-list.html" title="Tareas Pendientes" class="p-3 rounded-xl hover:bg-primary text-gray-500 hover:text-white transition-colors">
-                <svg class="size-6"><use href="/assets/img/sprite.svg#tasks"></use></svg>
+            <a href="../pages/to-do-list.html" title="Tareas Pendientes" class="p-3 rounded-xl hover:bg-primary text-gray-500 hover:text-white transition-colors">
+                <svg class="size-6"><use href="../assets/img/sprite.svg#tasks"></use></svg>
             </a>
         </nav>
 
         <div class="mb-2">
-            <a href="/pages/user-profile.html" title="Mi Perfil" class="cursor-pointer flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 overflow-hidden border-2 border-transparent hover:border-primary transition-colors">
-               <img src="/assets/img/user.avif" alt="Foto de perfil">
+            <a href="../pages/user-profile.html" title="Mi Perfil" class="cursor-pointer flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 overflow-hidden border-2 border-transparent hover:border-primary transition-colors">
+               <img src="../assets/img/user.avif" alt="Foto de perfil">
             </a>
         </div>
       </aside>
 
       <button id="btn-menu" class="fixed bottom-6 right-6 z-50 bg-primary text-white p-4 rounded-full shadow-xl sm:hidden hover:scale-105 transition-transform">
-        <svg class="size-6"><use href="/assets/img/sprite.svg#menu"></use></svg>
+        <svg class="size-6"><use href="../assets/img/sprite.svg#menu"></use></svg>
       </button>
     `;
   }

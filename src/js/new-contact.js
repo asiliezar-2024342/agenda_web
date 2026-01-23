@@ -1,4 +1,5 @@
-import { contactsDB, Contact } from "./data.js";
+import { contactsDB } from "./data.js";
+import Contact from "./models/Contact.js";
 
 const form = document.getElementById("form");
 

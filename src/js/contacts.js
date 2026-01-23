@@ -1,5 +1,6 @@
 import { ContactCard } from "./components/ContactCard.js";
 import { contactsDB } from "./data.js";
+import Contact from "./models/Contact.js";
 
 export function renderContact(contacts = contactsDB) {
   // Limpiar
@@ -24,5 +25,5 @@ export function renderContact(contacts = contactsDB) {
 }
 
 export function addContact() {
-  window.location.href = "/pages/new-contact.html";
+  window.location.href = "../pages/new-contact.html";
 }

@@ -1,16 +1,5 @@
 import Task from "./models/Task.js";
-
-// DB
-export class Contact {
-  constructor(name, email, phone, location, birthday, isFavorite = false) {
-    this.name = name;
-    this.email = email;
-    this.phone = phone;
-    this.location = location;
-    this.birthday = birthday;
-    this.isFavorite = isFavorite;
-  }
-}
+import Contact from "./models/Contact.js";
 
 const defaultContacts = [
   new Contact(

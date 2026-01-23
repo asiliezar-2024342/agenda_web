@@ -43,7 +43,6 @@ export class CallCard extends HTMLElement {
     btnReject.addEventListener("click", () => {
       this.close();
       this.#ringtone.pause();
-      document.body.removeChild(this);
     });
 
     this.#ringtone.addEventListener("ended", () => {
